@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antichess Russia</title>
+
+
+    <!--Font goes here-->
+    <style>
+        @font-face {
+            font-family: DroidSansMono;
+            src: url(./DroidSansMono.ttf);
+        }
+
+        body {
+            font-family: DroidSansMono;
+        }
+    </style>
+
+
+    <!--Page styles-->
+    <style>
+        body {
+            background-color: #161b33;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .header-table {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            color: white;
+            background-color: #0d0c1d;
+            padding: 10px;
+        }
+
+        .table-content-middle {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .team-name {
+            text-align: center;
+            font-size: x-large;
+            padding: 5px;
+        }
+
+        .table-content-right {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .contacts {
+            padding: 10px;
+            transition: .2s;
+        }
+
+        .contacts:hover {
+            transition: .2s;
+            background-color: #5352ed;
+            box-shadow: 0 0 20px #5352ed, 0 0 30px #5352ed, 0 0 40px #5352ed;
+            color: #fff;
+        }
+
+        .page-navigation-option {
+            padding: 10px;
+            transition: .2s;
+        }
+
+        .page-navigation-option:hover {
+            transition: .2s;
+            background-color: #5352ed;
+            box-shadow: 0 0 20px #5352ed, 0 0 30px #5352ed, 0 0 40px #5352ed;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="header" id="header">
+            <div class="header-table">
+                <div class="table-content-left">
+                    <table class="page-navigation">
+                        <tr>
+                            <td class="page-navigation-option">
+                                Турниры
+                            </td>
+                            <td class="page-navigation-option">
+                                Игроки
+                            </td>
+                            <td class="page-navigation-option">
+                                Титулы
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="table-content-middle">
+                    <span class="team-name">
+                        <strong>Antichess Russia</strong>
+                    </span>
+                </div>
+
+                <div class="table-content-right">
+                    <div class="contacts">
+                        <span>Контакты</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main"
+            style="text-align: center; color: white; text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff;">
+            <div class="intro" id="intro">
+                <div style="display: flex; justify-content: center; align-items: center; height: 100%; flex-direction: column;">
+                    <h1 style="font-size:3em;">Antichess Russia</h1>
+                    <p style="font-size:1.2em;">Федерация антишахмат России</p>
+                </div>
+            </div>
+            <script>
+                window.addEventListener("load", function () {
+                    var header = document.getElementById('header');
+                    var intro = document.getElementById('intro');
+
+                    intro.style.height = "calc(100vh - " + header.offsetHeight + "px)";
+                });
+            </script>
+        </div>
+        <div class="footer">
+
+        </div>
+    </div>
+</body>
+
+</html>
