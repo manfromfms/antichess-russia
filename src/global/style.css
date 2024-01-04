@@ -1,0 +1,71 @@
+body {
+    background-color: #161b33;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header-table {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: white;
+    background-color: #0d0c1d;
+    padding: 10px;
+}
+
+.a-no-decor {
+    color: white;
+    text-decoration: none;
+}
+
+.table-content-middle {
+    display: flex;
+    justify-content: space-around;
+}
+
+.team-name {
+    text-align: center;
+    font-size: x-large;
+    padding: 5px;
+}
+
+.table-content-right {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.contacts {
+    padding: 10px;
+    transition: .2s;
+}
+
+.currently-on {
+    background-color: greenyellow;
+    /*box-shadow: 0 0 20px greenyellow, 0 0 30px greenyellow, 0 0 40px greenyellow;*/
+    color: black;
+}
+
+.contacts:hover {
+    transition: .2s;
+    background-color: #5352ed;
+    box-shadow: 0 0 20px #5352ed, 0 0 30px #5352ed, 0 0 40px #5352ed;
+    color: #fff;
+}
+
+.currently-on:hover {
+    transition: .2s;
+    background-color: greenyellow;
+    box-shadow: 0 0 20px #5352ed, 0 0 30px #5352ed, 0 0 40px #5352ed;
+    color: #fff;
+}
+
+.page-navigation-option {
+    padding: 10px;
+    transition: .2s;
+}
+
+.page-navigation-option:hover {
+    transition: .2s;
+    background-color: #5352ed;
+    box-shadow: 0 0 20px #5352ed, 0 0 30px #5352ed, 0 0 40px #5352ed;
+    color: #fff;
+}
