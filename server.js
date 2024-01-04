@@ -15,8 +15,9 @@ app.get('/', (req, res) => {
 app.use((req, res) => {
     const path = req.path
     
-    if(path.startsWith('/src/')) {
-        res.sendFile(__dirname + '/' + path)
+    if(path.startsWith('/antichess-russia/src/')) {
+        var modifiedPath = path.replace('/antichess-russia', '')
+        res.sendFile(__dirname + '/' + modifiedPath)
     }
 })
 
