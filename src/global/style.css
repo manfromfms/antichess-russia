@@ -44,16 +44,13 @@ body {
     color: black;
 }
 
+.currently-on > * {
+    color: black;
+}
+
 .contacts:hover {
     transition: .2s;
     background-color: #5352ed;
-    box-shadow: 0 0 20px #5352ed, 0 0 30px #5352ed, 0 0 40px #5352ed;
-    color: #fff;
-}
-
-.currently-on:hover {
-    transition: .2s;
-    background-color: greenyellow;
     box-shadow: 0 0 20px #5352ed, 0 0 30px #5352ed, 0 0 40px #5352ed;
     color: #fff;
 }
@@ -67,5 +64,12 @@ body {
     transition: .2s;
     background-color: #5352ed;
     box-shadow: 0 0 20px #5352ed, 0 0 30px #5352ed, 0 0 40px #5352ed;
+    color: #fff;
+}
+
+.currently-on:hover {
+    transition: .2s;
+    background-color: magenta;
+    box-shadow: 0 0 20px magenta, 0 0 30px magenta, 0 0 40px magenta;
     color: #fff;
 }
